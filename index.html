@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics | Bobbi Brown Cosmetics</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            font-family:"BBSans Regular",Helvetica,Arial,sans-serif;
+        }
+
+        #nav{
+            width: 95%;
+            margin:auto;
+            display:flex;
+            padding: 30px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #left{
+            display: flex;
+            width: 160px;
+            display: flex;
+            justify-content: space-between;;
+        }
+
+        #login-signup{
+            display: flex;
+            width: 230px;
+            display: flex;
+            justify-content: space-between;; 
+        }
+
+
+        #offer>img{
+            width: 100%;
+        }
+
+        #offer>div{
+            position: absolute;
+            color: white;
+            top: 230px;
+            left: 180px;
+        }
+
+        #offer>div>h1{
+            font-size: 40px;
+            width: 230px;
+
+        } 
+
+        #offer>div>p:nth-child(1){
+            font-weight: bold;
+        }
+
+        #offer>div>p:nth-child(3){
+            width: 360px;
+            margin-top: 20px;
+            margin-bottom: 15px;    
+        }
+
+        #offer>div>button{
+            width: 130px;
+            height: 50px;
+            border: 0px;      
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+        #event{
+            margin-top: 30px;
+            /* text-align: center; */
+        }
+
+        #event>div{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            width:40%;
+            justify-content: space-between;
+            margin:auto;
+            text-align: center;
+        }
+
+        #event>h1{
+            text-align: center;
+            margin:10px;
+        }
+
+        #event>div:nth-child(3){
+            display: flex;
+            justify-content: space-between;
+            width: 450px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #event>div:nth-child(3){
+            width: 80%;
+        }
+
+        #container>#event-pd{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap:40px;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        #event-pd>div{  
+            font-size: small;
+        }
+
+        #event-pd img{
+            width:100%;
+        }
+
+        .grey{
+            color: grey;
+            margin-top: 5px;
+            font-size: smaller;
+        }
+
+        #event-pd button{
+            width: 130px;
+            background-color: black;
+            color: white;
+            height: 50px;
+            border: 0px;
+            margin-top: 10px    ;
+        }
+
+        #add{
+            width: 80%;
+            margin:auto;
+        }
+
+        #add>div:nth-child(1){
+            text-align:center;
+            margin-top:60px;
+        }
+
+        #add>div:nth-child(1)>h1{
+            margin:5px;
+        }
+
+        #add>div:nth-child(2)>p{
+            margin-bottom: 10px;
+        }
+
+        #add1{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap:20px;
+        }
+
+        #add1 h3{
+            font-weight: 400;
+            margin:20px 0;
+        }
+
+        #add p{
+            font-size: small;
+        }
+
+        #add1>div>img{
+            width: 100%;    
+        }
+
+        #add1 button{
+            width: 130px;
+            background-color: black;
+            color: white;
+            height: 50px;
+            border: 0px;
+            margin-top: 10px  
+        }
+        #footer{
+            margin-top: 30px;            
+            background-color: black;
+        }
+
+        #footer>#first{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            color: white;
+            padding: 40px;
+            width:80%;
+            margin:auto;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="nav">
+            <div id="left">
+                <div><p>Shop</p></div>
+                <div><p>Learn</p></div>
+                <div><p>Search</p></div>
+            </div>
+            <div id="logo"><h1>BOBBI BROWN</h1></div>
+
+            <div id="login-signup">  
+                <div><a href="login.html"><p>Email SignUp</p></a></div> 
+                <div><a href="login.html"><p>Sign in</p></a></div> 
+                <div><a href="login.html"><p>Bag (0)</p></a></div> 
+            </div>
+        </div>
+
+        <div id="offer">
+            <div>
+                <p>SUMMER STOCK-UP EVENT</p>
+                <h1>25%OFF EVERYTHING</h1>
+                <p>Get more of what you love for less.
+                 Plus,create a 3-peice Summer
+                  Travel Set when you spend $75+.</p>
+                  <button onclick="hello()">SHOP NOW</button>
+            </div>  
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/Homepage/SS22/SS22_JuneTier_Bestsellers_pc.jpg" alt="">
+
+        </div>
+
+        <div id="event">
+            <h1>Gotta Have It</h1>
+            <div>
+                <p>TRENDING NOW</p>
+                <p>NEW</p>
+                <p>SKIN CARE</p>
+            </div>
+
+            <div id="event-pd">
+                <div>
+                    <div><img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/v2_1080x1080/bb_sku_E96E51_1080x1080_0.jpg" alt=""></div>
+                    <p>Long-Wear Cream Shadow Stick</p>
+                    <p class="grey">Our ulitmate quick eye shadow stick</p>
+                    <p class="grey">$30.00</p>
+                    <button onclick="hello()">Add to bag</button>
+                </div>
+                <div>
+                    <div><img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/v2_1080x1080/bb_sku_E96E51_1080x1080_0.jpg" alt=""></div>
+                    <p>Long-Wear Cream Shadow Stick</p>
+                    <p class="grey">Our ulitmate quick eye shadow stick</p>
+                    <p class="grey">$30.00</p>
+                    <button onclick="hello()">Add to bag</button>
+                </div>
+                <div>
+                    <div><img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/v2_1080x1080/bb_sku_E96E51_1080x1080_0.jpg" alt=""></div>
+                    <p>Long-Wear Cream Shadow Stick</p>
+                    <p class="grey">Our ulitmate quick eye shadow stick</p>
+                    <p class="grey">$30.00</p>
+                    <button onclick="hello()">Add to bag</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="add">
+            <div id="title">
+                <h1>SHADOW PLAY</h1> 
+                <p>Play up your smokey eye with shimmering shadow that catches the light.</p>
+            </div>
+
+            <div id="add1">
+                <div>
+                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_SpringSmokeyEye_pc_1.jpg" alt="">
+                    <h3>SHIMMER ON</h3>
+                    <p>Swipe on Long-kWear Cream Shadow in cinnamon, golden Pink, and Bark for dimensional shimmer.</p>
+                    <button onclick="hello()">Shop Now</button>
+                </div>
+
+                <div>
+                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_SpringSmokeyEye_pc_1.jpg" alt="">
+                    <h3>SHIMMER ON</h3>
+                    <p>Swipe on Long-kWear Cream Shadow in cinnamon, golden Pink, and Bark for dimensional shimmer.</p>
+                    <button onclick="hello()">Shop Now</button>
+                </div>
+
+                <div>
+                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_SpringSmokeyEye_pc_1.jpg" alt="">
+                    <h3>SHIMMER ON</h3>
+                    <p>Swipe on Long-kWear Cream Shadow in cinnamon, golden Pink, and Bark for dimensional shimmer.</p>
+                    <button onclick="hello()">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+
+                         <!-- footer -->
+        
+        <div id="footer">
+            <div id="first">
+                <div>
+                    <h4>NEED HELP?</h4>
+                    <p>Chat with an artist</p>
+                    <p>Text An Artist</p>
+                    <p>Call Us (877)-310-9222</p>
+                    <p>shipping & Returns</p>
+                    <p>FAQS</p>
+                    <p>Careers</p>
+                </div>
+
+                <div>
+                    <h4>MY BOBBI BROWN</h4>
+                    <p>BB Access</p>
+                    <p>My Account</p>
+                    <p>My Orders</p>
+                    <p>Store Locator</p>
+                </div>
+
+                <div>
+                    <input type="text" placeholder="ENTER YOUR EMAIL">
+                    <br>
+                    <input type="text" placeholder="ENTER YOUR MOBILE PHONE">
+                    <br>
+                    <button onclick="hello()">SUBMIT</button>
+                    <h3>FOLLOW US</h3>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function hello(){
+        alert("Product added to your cart");
+    }
+</script>

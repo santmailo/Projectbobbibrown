@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | BobbiBrown.com</title>
+    <style>
+
+        *{
+            margin:10px;
+            font-family:"BBSans Regular",Helvetica,Arial,sans-serif;
+        }
+
+        #nav{
+            width: 95%;
+            margin:auto;
+            display:flex;
+            padding: 30px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #left{
+            display: flex;
+            width: 160px;
+            display: flex;
+            justify-content: space-between;;
+        }
+
+        #login-signup{
+            display: flex;
+            width: 230px;
+            display: flex;
+            justify-content: space-between;; 
+        }
+
+
+        #container{
+            display: flex;
+            width: 55%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .child{
+            margin-top: 0px;
+            height: 400px;
+            width: 50%;
+        }
+
+        input{
+            width: 80%;
+            padding: 10px;
+        }
+
+        input[type="checkbox"]{
+            width: 20px;
+        }
+
+        button{
+            width: 90%;
+            height: 40px;
+            color:white;
+            background-color: black;
+        }
+
+        #footer{
+            margin-top: 120px;            
+            background-color: black;
+
+        }
+
+        #footer>#first{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            color: white;
+            padding: 40px;
+            width:80%;
+            margin:auto;
+
+        }
+
+        #footer>button{
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="left">
+            <div><p>Shop</p></div>
+            <div><p>Learn</p></div>
+            <div><p>Search</p></div>
+        </div>
+        <div id="logo"><h1>BOBBI BROWN</h1></div>
+
+        <div id="login-signup">
+            <div><p>Email Sign Up</p></div> 
+            <div><p>Sign in</p></div> 
+            <div><p>Bag (0)</p></div> 
+        </div>
+    </div>
+    <div id="container">
+        
+        <div class="child">
+            <p>ALREADY HAVE AN ACCOUNT?</p> 
+            <h3>CONTINUE</h3>
+            <input type="email" placeholder="*Email Address" required><br>
+            <input type="password" placeholder="*Password">
+            <p>Forgot your password?</p>
+            <form action="index.html">            
+                <button>CONTINUE</button>
+            </form>
+
+        </div>
+        <div class="child">
+            <p>DON'T HAVE AN ACCOUNT?</p> 
+            <h3>CREATE & JOIN BBACCESS</h3>
+            <input type="email" placeholder="*Email Address" required><br>
+            <input type="password" placeholder="*Password">
+            <p>When is your birthday?</p>
+            <select id="month" name="month">
+                <option>month</option>
+                <option value="01">(01) January</option>
+                <option value="02">(02) February</option>
+                <option value="03">(03) March</option>
+                <option value="04">(04) April</option>
+                <option value="05">(05) May</option>
+                <option value="06">(06) June</option>
+                <option value="07">(07) July</option>
+                <option value="08">(08) August</option>
+                <option value="09">(09) September</option>
+                <option value="10">(10) October</option>
+                <option value="11">(11) November</option>
+                <option value="12">(12) December</option>
+            </select>
+
+            <select id="day" name="day">
+                <option>day</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <br>
+
+
+            <table>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Yes, I want to join BB Access. By clicking ‘Join Now’ I agree to BB Access Terms & Conditions, 
+                Bobbi Brown Privacy Policy and, if I am a California resident, the Notice of Financial Incentive. 
+                I also agree to the Bobbi Brown Terms and Conditions <br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>By clicking "Sign Up", I agree to the Bobbi Brown Terms and Conditions and Privacy Policy. </td>
+                </tr>
+            </table>
+            <form action="index.html">            
+                <button>SignUp</button>
+            </form>
+        </div> 
+    </div>
+
+    <div id="footer">
+        <div id="first">
+            <div>
+                <h4>NEED HELP?</h4>
+                <p>Chat with an artist</p>
+                <p>Text An Artist</p>
+                <p>Call Us (877)-310-9222</p>
+                <p>shipping & Returns</p>
+                <p>FAQS</p>
+                <p>Careers</p>
+            </div>
+
+            <div>
+                <h4>MY BOBBI BROWN</h4>
+                <p>BB Access</p>
+                <p>My Account</p>
+                <p>My Orders</p>
+                <p>Store Locator</p>
+            </div>
+
+            <div>
+                <input type="text" placeholder="ENTER YOUR EMAIL">
+                <br>
+                <input type="text" placeholder="ENTER YOUR MOBILE PHONE">
+                <br>
+                <button>SUBMIT</button>
+                <h3>FOLLOW US</h3>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
+
+<script>
+    var a = document.querySelectorAll("button");
+    for(var i=0; i<a.length;i++){
+            a.addEventListener("click",login);
+    }
+
+
+    function login(){
+        alert("login successful");
+
+    }
+</script>
